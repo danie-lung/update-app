@@ -41,6 +41,11 @@ function cekKode(){
     showToast("Masukkan kode download", "error");
     return;
   }
+  
+  if(app === "dapodik"){
+    showToast("Aplikasi belum tersedia", "error");
+    return;
+  }
 
   // Lock UI
   btn.disabled = true;
